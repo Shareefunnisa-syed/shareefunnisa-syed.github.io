@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shareefunnisa · IT Associate & Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f6fb;--surface:#fff;--ink:#16223b;--muted:#56637d;--line:#d6deea;--accent:#0e8a8c;--accent-ink:#fff;--warm:#f0a83a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1626;--surface:#172037;--ink:#e8eefb;--muted:#9aa8c4;--line:#2a3652;--accent:#3cc4c6;--accent-ink:#06222a;--warm:#f5b655;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1626;--surface:#172037;--ink:#e8eefb;--muted:#9aa8c4;--line:#2a3652;--accent:#3cc4c6;--accent-ink:#06222a;--warm:#f5b655;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.12;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:6}
+nav .wrap{display:flex;align-items:center;gap:20px;height:58px;overflow-x:auto}
+nav b{font-family:"Bricolage Grotesque",sans-serif;font-size:20px;margin-right:auto;white-space:nowrap}
+nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:15px;white-space:nowrap}
+nav a:hover{color:var(--ink)}
+section{padding:72px 0}
+h2{font-size:clamp(30px,5vw,42px);margin-bottom:28px}
+.hero{padding:64px 0 40px}
+.hero .wrap{display:grid;gap:40px;grid-template-columns:1.2fr 1fr;align-items:center}
+.hero h1{font-size:clamp(38px,7vw,68px);font-weight:800;letter-spacing:-.02em}
+.hero p{color:var(--muted);max-width:52ch;margin:20px 0 28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--accent);margin:0 10px 10px 0}
+.btn.p{background:var(--accent);color:var(--accent-ink)}
+.btn.s{color:var(--ink)}
+.dash{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+.dash h3{font-size:17px;margin-bottom:4px}
+.dash small{color:var(--muted)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
+.kpis div{background:var(--bg);border-radius:12px;padding:12px}
+.kpis strong{display:block;font:800 26px "Bricolage Grotesque",sans-serif;color:var(--accent)}
+.kpis span{font-size:13px;color:var(--muted)}
+.bars{display:flex;align-items:flex-end;gap:10px;height:120px;border-bottom:2px solid var(--line);padding:0 4px}
+.bars i{flex:1;background:var(--accent);border-radius:6px 6px 0 0;height:var(--h);transform-origin:bottom;animation:grow .9s cubic-bezier(.2,.8,.2,1) both}
+.bars i:nth-child(even){background:var(--warm)}
+.bars i:nth-child(2){animation-delay:.08s}.bars i:nth-child(3){animation-delay:.16s}.bars i:nth-child(4){animation-delay:.24s}.bars i:nth-child(5){animation-delay:.32s}.bars i:nth-child(6){animation-delay:.4s}
+@keyframes grow{from{transform:scaleY(0)}}
+.labels{display:flex;gap:10px;font-size:12px;color:var(--muted);padding:6px 4px 0}
+.labels span{flex:1;text-align:center}
+.tabs{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.tabs button{font:700 15px "DM Sans",sans-serif;padding:9px 20px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.panel[hidden]{display:none}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{margin:6px 0 0;color:var(--muted);font-size:15.5px}
+.date{font-size:14px;font-weight:700;color:var(--accent)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tags span{font-size:13px;padding:3px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--line)}
+h3.sub{font-size:22px;margin:0 0 14px}
+.grp+.grp{margin-top:36px}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:32px;display:grid;gap:24px;grid-template-columns:1fr 1fr}
+.contact ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.contact a{font-weight:500}
+form{display:grid;gap:10px}
+input,textarea{font:inherit;padding:11px 13px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;text-align:center}
+@media (max-width:760px){.hero .wrap,.contact{grid-template-columns:1fr}section{padding:52px 0}}
+@media (prefers-reduced-motion:reduce){.bars i{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<b>Shareefunnisa</b>
+<a href="#about">About</a><a href="#projects">Projects</a><a href="#certs">Certifications</a><a href="#contact">Contact</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<h1>Hi, I’m Shareefunnisa. I turn business data into clear dashboards.</h1>
+<p>IT Associate apprentice at Converge Electronics, an Arrow company. I build reports and dashboards, maintain the Qtrade application and keep Salesforce data accurate.</p>
+<a class="btn p" href="mailto:syedshareefunnisa@gmail.com">Hire me</a><a class="btn s" href="#projects">See projects</a>
+</div>
+<div class="dash" aria-label="Skills overview">
+<h3>Tools I use</h3><small>Day-to-day work at Converge</small>
+<div class="kpis">
+<div><strong>1 yr</strong><span>Apprenticeship</span></div>
+<div><strong>8.13</strong><span>B.Tech CGPA</span></div>
+<div><strong>2</strong><span>Certificates</span></div>
+</div>
+<div class="bars" role="img" aria-label="Bar chart of main tools: Excel, Power BI, Salesforce, Qtrade, SQL, Python">
+<i style="--h:92%"></i><i style="--h:84%"></i><i style="--h:78%"></i><i style="--h:70%"></i><i style="--h:48%"></i><i style="--h:42%"></i>
+</div>
+<div class="labels"><span>Excel</span><span>Power BI</span><span>CRM</span><span>Qtrade</span><span>SQL</span><span>Py</span></div>
+</div>
+</div></header>
+
+<section id="about"><div class="wrap">
+<h2>About me</h2>
+<p style="max-width:68ch;color:var(--muted);margin:-8px 0 28px">I’m an Electronics and Communication Engineering graduate working in IT. I update lead details in Salesforce, create reports and dashboards, and check in with customers about their requirements. I’m now moving towards data analyst and software roles.</p>
+<div class="tabs" role="tablist">
+<button role="tab" aria-selected="true" aria-controls="p1" id="t1">Skills</button>
+<button role="tab" aria-selected="false" aria-controls="p2" id="t2">Experience</button>
+<button role="tab" aria-selected="false" aria-controls="p3" id="t3">Education</button>
+</div>
+<div class="panel" id="p1" role="tabpanel" aria-labelledby="t1"><div class="grid">
+<div class="card"><h3>Analytics & reporting</h3><div class="tags"><span>Excel</span><span>Power BI</span><span>Dashboards</span><span>Reports</span></div></div>
+<div class="card"><h3>Business tools</h3><div class="tags"><span>Salesforce</span><span>SAP</span><span>Qtrade</span></div></div>
+<div class="card"><h3>Programming</h3><div class="tags"><span>SQL</span><span>Python</span><span>MATLAB</span></div></div>
+<div class="card"><h3>Version control</h3><div class="tags"><span>Git</span><span>GitHub</span></div></div>
+</div></div>
+<div class="panel" id="p2" role="tabpanel" aria-labelledby="t2" hidden><div class="grid">
+<div class="card"><span class="date">Nov 2025 – Present</span><h3>Apprentice – IT Associate</h3><p>Converge Electronics (an Arrow company), Bengaluru. Reports, dashboards, Salesforce lead updates, Qtrade and customer requirements.</p></div>
+<div class="card"><span class="date">Oct – Dec 2024</span><h3>Web Development Intern</h3><p>Internship focused on building web pages.</p></div>
+<div class="card"><span class="date">Aug – Oct 2023</span><h3>Salesforce Developer Intern</h3><p>Virtual internship on the Salesforce platform.</p></div>
+</div></div>
+<div class="panel" id="p3" role="tabpanel" aria-labelledby="t3" hidden><div class="grid">
+<div class="card"><span class="date">2021 – 2025</span><h3>B.Tech, Electronics & Communication Engineering</h3><p>Pragati Engineering College. CGPA 8.13.</p></div>
+</div></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<div class="grp"><h3 class="sub">Office projects</h3><div class="grid">
+<div class="card"><span class="date">Apr 2026 – Present</span><h3>Qtrade Application</h3><p>Maintaining the internal tool used to upload all incoming requirements, and generating pipelines with the different BO teams.</p><div class="tags"><span>Qtrade</span><span>Pipelines</span></div></div>
+<div class="card"><span class="date">Nov 2025 – Mar 2026</span><h3>Business Data Analysis & Dashboard Development</h3><p>Built reports and dashboards that turn sales and customer data into decisions for internal teams.</p><div class="tags"><span>Excel</span><span>Power BI</span><span>Salesforce</span></div></div>
+</div></div>
+<div class="grp"><h3 class="sub">Academic projects</h3><div class="grid">
+<div class="card"><span class="date">Dec 2024 – Apr 2025</span><h3>Content-Aware Image Restoration</h3><p>Final-year project on denoising Cryo-TEM images.</p><div class="tags"><span>MATLAB</span></div><p><a href="https://github.com/Shareefunnisa-syed" target="_blank" rel="noopener">Code on GitHub</a></p></div>
+<div class="card"><span class="date">Sep – Nov 2024</span><h3>E-commerce Sales Analysis & Interactive Dashboard</h3><p>Analysed e-commerce sales and presented the results in an interactive dashboard.</p><div class="tags"><span>Excel</span><span>SQL</span><span>Power BI</span></div></div>
+<div class="card"><span class="date">Oct 2023 – Jan 2024</span><h3>IoT-Based Home Automation System</h3><p>Team project to control home devices through a web app.</p><div class="tags"><span>Python</span><span>Flask</span></div><p><a href="https://github.com/Shareefunnisa-syed" target="_blank" rel="noopener">Code on GitHub</a></p></div>
+</div></div>
+</div></section>
+
+<section id="certs"><div class="wrap">
+<h2>Certifications</h2>
+<div class="grid">
+<div class="card"><span class="date">Oct 2024</span><h3>Salesforce AI Associate</h3><p>Salesforce certificate.</p></div>
+<div class="card"><span class="date">Jan – Feb 2024</span><h3>Python for Data Science</h3><p>NPTEL, IIT Kharagpur.</p></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Let’s talk</h2>
+<div class="contact">
+<div><p style="margin-top:0;color:var(--muted)">Looking for data analyst and associate software engineer roles. Send me a note.</p>
+<ul><li><a href="mailto:syedshareefunnisa@gmail.com">syedshareefunnisa@gmail.com</a></li><li><a href="https://www.linkedin.com/in/shareefunnisa-syed" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/Shareefunnisa-syed" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://drive.google.com/file/d/1558_i6ZZeBRvySaZ18KBi5umh8ZNGVuj/view?usp=drivesdk" target="_blank" rel="noopener">Download resume</a></li></ul></div>
+<form id="f"><input aria-label="Your name" placeholder="Your name" required><input type="email" aria-label="Your email" placeholder="Your email" required><textarea rows="4" aria-label="Message" placeholder="Message" required></textarea><button class="btn p" style="margin:0;cursor:pointer;font:inherit;font-weight:700" type="submit">Send message</button><small id="ok" role="status" style="color:var(--accent)"></small></form>
+</div>
+</div></section>
+
+<footer>© 2026 Shareefunnisa</footer>
+
+<script>
+var tabs=document.querySelectorAll('[role=tab]');
+tabs.forEach(function(t){t.addEventListener('click',function(){
+tabs.forEach(function(x){x.setAttribute('aria-selected',x===t);document.getElementById(x.getAttribute('aria-controls')).hidden=x!==t});
+})});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();
+var f=e.target,m=f.querySelector('textarea').value,n=f.querySelector('input').value;
+location.href='mailto:syedshareefunnisa@gmail.com?subject='+encodeURIComponent('Portfolio message from '+n)+'&body='+encodeURIComponent(m);
+document.getElementById('ok').textContent='Opening your email app…';});
+</script>
+</body>
+</html>
